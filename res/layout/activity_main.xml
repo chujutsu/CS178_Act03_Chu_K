@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+   	android:layout_width="match_parent"
+   	android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RL1"
+        >
+        <LinearLayout
+        	android:layout_width="200dp"
+        	android:layout_height="50dp"
+        	android:id="@+id/LL1">
+
+        	<Button
+            	android:id="@+id/button1"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+            	android:background="#FF0000"
+            	android:layout_marginLeft="0dp"
+            	android:text="@string/racebox1"
+            	/>
+        
+    	</LinearLayout>
+    
+    	<LinearLayout
+        	android:layout_width="200dp"
+        	android:layout_height="50dp"
+        	android:id="@+id/LL2"
+        	android:layout_below="@id/LL1"
+        	>
+        
+        	<Button
+            	android:id="@+id/button2"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+            	android:background="#00FF00"
+            	android:layout_marginLeft="0dp"
+            	android:text="@string/racebox2"
+            	/>
+        
+    	</LinearLayout>
+    
+    	<LinearLayout
+        	android:layout_width="200dp"
+        	android:layout_height="50dp"
+        	android:id="@+id/LL3"
+        	android:layout_below="@id/LL2"
+        	>
+        
+        	<Button
+            	android:id="@+id/button3"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+            	android:background="#0000FF"
+            	android:layout_marginLeft="0dp"
+            	android:text="@string/racebox3"
+            	/>
+        
+    	</LinearLayout>
+    
+    	<LinearLayout
+        	android:layout_width="200dp"
+        	android:layout_height="50dp"
+        	android:id="@+id/LL4"
+        	android:layout_below="@id/LL3"
+        	>
+        
+        	<Button
+            	android:id="@+id/button4"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+            	android:background="#FFFF00"
+            	android:layout_marginLeft="0dp"
+            	android:text="@string/racebox4"
+            	/>
+        
+    	</LinearLayout>
+    
+    	<LinearLayout
+        	android:layout_width="200dp"
+        	android:layout_height="50dp"
+        	android:id="@+id/LL5"
+        	android:layout_below="@id/LL4"
+        	>
+        
+        	<Button
+            	android:id="@+id/button5"
+            	android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+            	android:background="#FF00FF"
+            	android:layout_marginLeft="0dp"
+            	android:text="@string/racebox5"
+            	/>
+        
+    	</LinearLayout>
+    </RelativeLayout>
+    	
+    <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="250dp"
+        android:layout_toRightOf="@id/RL1"
+        android:background="@drawable/finish_line"
+        >
+    </LinearLayout>
+    
+
+</RelativeLayout>
