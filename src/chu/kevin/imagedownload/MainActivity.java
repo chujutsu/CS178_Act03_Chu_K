@@ -15,12 +15,20 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 	
+//	private String[] image_url = new String[]{
+//			"https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/578602_10151181869434437_1116385294_n.jpg",
+//			"https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/538877_10151115727799437_1076855672_n.jpg",
+//			"https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/530257_10151086240814437_76839725_n.jpg",
+//			"https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/543041_10150905256689437_768518062_n.jpg",
+//			"https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-snc7/421124_10150592493699437_1502873407_n.jpg"
+//	};
+	
 	private String[] image_url = new String[]{
-			"https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/578602_10151181869434437_1116385294_n.jpg",
-			"https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/538877_10151115727799437_1076855672_n.jpg",
-			"https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/530257_10151086240814437_76839725_n.jpg",
-			"https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/543041_10150905256689437_768518062_n.jpg",
-			"https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-snc7/421124_10150592493699437_1502873407_n.jpg"
+			"http://ww1.prweb.com/prfiles/2010/05/11/1751474/gI_TodoforiPadAppIcon512.png.jpg",
+			"http://cdn4.iosnoops.com/wp-content/uploads/2011/08/Icon-Gmail_large-250x250.png",
+			"http://kelpbeds.files.wordpress.com/2012/02/lens17430451_1294953222linkedin-icon.jpg?w=450",
+			"http://snapknot.com/blog/wp-content/uploads/2010/03/facebook-icon-copy.jpg",
+			"https://lh3.googleusercontent.com/-ycDGy_fZVZc/AAAAAAAAAAI/AAAAAAAAAAc/Q0MmjxPCOzk/s250-c-k/photo.jpg"
 	};
 	
 	private int no_of_files= image_url.length;
@@ -73,7 +81,11 @@ public class MainActivity extends Activity {
 	         {
 	        	 imageView.setImageDrawable(m_bitmap);
 	         }
-	             //store the images in an array or do something else with all the images.   
+	         else
+	         {
+	        	 imageView.setImageResource(R.drawable.notfound);
+	         }
+	                
 	     }
 	     
 	     private Drawable ImageOperations(String url, String saveFilename) {
